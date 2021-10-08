@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace RaceTrack.RaceTrack.Cars
 {
-    public class Tractor : RaceCar
+    public class MyRaceCar : RaceCar
     {
-        public Tractor()
+        public MyRaceCar()
         {
-            Name = "Tractor";
-            TopSpeed = 20;
+            Name = "Porsche";
+            TopSpeed = 150;
         }
 
         public override void StartEngine()
         {
-            Console.WriteLine($"The {Name} struggles to start");
+            Console.WriteLine($"The {Name} races down the track");
         }
 
         public override void Brake()
         {
-            Console.WriteLine($"The {Name} is having a hard time stopping!");
+            Console.WriteLine($"The {Name} is lowering speeds!");
             base.Brake();
         }
 

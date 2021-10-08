@@ -34,5 +34,7 @@ namespace RaceTrack.RaceTrack.Cars
         {
             Console.WriteLine($"The {Name} ends in position {Position}!");
         }
+
+        public abstract void StopEngine();              //ADDED (SEE OTHER CLASS ADDITIONS) --  EXTRA CREDIT 
     }
 }

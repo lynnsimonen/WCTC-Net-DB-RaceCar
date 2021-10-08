@@ -34,5 +34,10 @@ namespace RaceTrack.RaceTrack.Drivers
 
         public abstract void Drive();
 
+        public virtual void StopEngine()            //ADDED THIS
+        {
+            Car.StopEngine();
+        }
+
     }
 }
